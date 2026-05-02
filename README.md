@@ -6,4 +6,4 @@ To build a rock-solid foundation in Python logic, automation, and data handling 
 
 ## 📅 Progress Tracker
 - [x] Day 4: Rock Paper Scissors (Basic Logic & ASCII Art)
-- [ ] Day 5: ...
+- [ ] Day 8: Simple Caesar Cipher Encoder-Decoder Program
