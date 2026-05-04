@@ -1,7 +1,4 @@
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
 
 def encoder(text, shift):
     result = ""
@@ -23,9 +20,14 @@ def decoder(text, shift):
             result += char
     return result
 
-if direction == "encode":
-    print(f"Encoded: {encoder(text, shift)}")
-elif direction == "decode":
-    print(f"Decoded: {decoder(text, shift)}")
-else:
-    print("Not a valid direction")
+if __name__ == "__main__":
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
+
+    if direction == "encode":
+        print(f"Encoded: {encoder(text, shift)}")
+    elif direction == "decode":
+        print(f"Decoded: {decoder(text, shift)}")
+    else:
+        print("Not a valid direction")
